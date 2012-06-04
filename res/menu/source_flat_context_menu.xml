@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/source_flat_context_menu_mark_all_read" android:title="@string/mark_all_read" />
+    <item android:id="@id/source_flat_context_menu_delete_all" android:title="@string/delete_all" />
+    <item android:id="@id/source_flat_context_menu_download_article" android:title="@string/download_article" />
+    <item android:id="@id/source_flat_context_menu_undownload_article" android:visible="false" android:title="@string/undownload_article" />
+    <item android:id="@id/source_flat_context_menu_download_podcast" android:title="@string/download_podcast" />
+    <item android:id="@id/source_flat_context_menu_undownload_podcast" android:visible="false" android:title="@string/undownload_podcast" />
+    <item android:id="@id/source_flat_context_menu_openwebsite" android:title="@string/open_website" />
+    <item android:id="@id/source_flat_context_menu_delete_feed" android:title="@string/delete_feed" />
+    <item android:id="@id/source_flat_context_menu_properties" android:title="@string/properties" />
+</menu>

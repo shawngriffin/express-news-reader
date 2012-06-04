@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="SETTING_ROOT"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/settings_display_title" android:key="SETTINGS_DISPLAY_SCREEN" android:summary="@string/settings_display_summary">
+        <PreferenceCategory android:title="@string/settings_general_options">
+            <PreferenceScreen android:title="@string/settings_display_colortheme_title" android:summary="@string/settings_display_colortheme_summary">
+                <ListPreference android:entries="@array/theme_entries" android:title="@string/settings_display_colortheme_title" android:key="SETTINGS_DISPLAY_COLORTHEME" android:summary="@string/settings_display_colortheme_summary" android:defaultValue="LIGHT_THEME" android:entryValues="@array/theme_values" />
+                <PreferenceCategory android:title="@string/settings_display_custom_options">
+                    <com.appyet.mobile.view.preference.colorpicker.ColorPickerPreference android:title="@string/settings_display_fontcolor_primary_title" android:key="SETTINGS_DISPLAY_FONTCOLOR_PRIMARY" android:summary="@string/settings_display_fontcolor_primary_summary" android:defaultValue="@integer/COLOR_BLACK" alphaSlider="true" />
+                    <com.appyet.mobile.view.preference.colorpicker.ColorPickerPreference android:title="@string/settings_display_fontcolor_secondary_title" android:key="SETTINGS_DISPLAY_FONTCOLOR_SECONDARY" android:summary="@string/settings_display_fontcolor_secondary_summary" android:defaultValue="@integer/COLOR_BLACK" alphaSlider="true" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <ListPreference android:title="@string/settings_display_language_title" android:key="SETTINGS_DISPLAY_LANGUAGE" android:summary="@string/settings_display_language_summary" android:defaultValue="en" />
+            <ListPreference android:entries="@array/dateformater_entries" android:title="@string/settings_display_datetimeformat_title" android:key="SETTINGS_DISPLAY_DATETIMEFORMAT" android:summary="@string/settings_display_datetimeformat_summary" android:defaultValue="" android:entryValues="@array/dateformater_values" />
+            <CheckBoxPreference android:title="@string/settings_display_confirmbulkactions_title" android:key="SETTINGS_DISPLAY_CONFIRMBULKACTIONS" android:summary="@string/settings_display_confirmbulkactions_summary" android:defaultValue="true" />
+            <PreferenceScreen android:title="@string/settings_clearsearchhistory_title" android:key="SETTINGS_CLEARSEARCHHISTORY" android:summary="@string/settings_clearsearchhistory_summary" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/settings_display_feedlist_options" android:key="SETTINGS_DISPLAY_FEEDLIST_OPTIONS">
+            <CheckBoxPreference android:title="@string/settings_display_displayfavorite_title" android:key="SETTINGS_DISPLAY_DISPLAYFAVORITE" android:summary="@string/settings_display_displayfavorite_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/settings_display_groupfeed_title" android:key="SETTINGS_DISPLAY_GROUPFEEDS" android:summary="@string/settings_display_groupfeed_summary" android:defaultValue="true" />
+            <ListPreference android:entries="@array/sortgroupby_entries" android:title="@string/settings_display_sortgroupby_title" android:key="SETTINGS_DISPLAY_SORTGROUPBY" android:summary="@string/settings_display_sortgroupby_summary" android:defaultValue="3" android:entryValues="@array/sortgroupby_values" />
+            <ListPreference android:entries="@array/font_size_entries" android:title="@string/settings_display_feedlist_fontsize_title" android:key="SETTINGS_DISPLAY_FEEDLIST_FONTSIZE" android:summary="@string/settings_display_feedlist_fontsize_summary" android:defaultValue="2" android:entryValues="@array/font_size_values" />
+            <ListPreference android:entries="@array/sortfeedby_entries" android:title="@string/settings_display_sortfeedby_title" android:key="SETTINGS_DISPLAY_SORTFEEDBY" android:summary="@string/settings_display_sortfeedby_summary" android:defaultValue="3" android:entryValues="@array/sortfeedby_values" />
+            <ListPreference android:entries="@array/feedlistitemlayout_entries" android:title="@string/settings_display_feedlistitemlayout_title" android:key="SETTINGS_DISPLAY_FEEDLISTITEMLAYOUT" android:summary="@string/settings_display_feedlistitemlayout_summary" android:defaultValue="CLASSIC_RICH" android:entryValues="@array/feedlistitemlayout_values" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/settings_display_articlelist_options">
+            <ListPreference android:entries="@array/font_size_entries" android:title="@string/settings_display_articlelist_fontsize_title" android:key="SETTINGS_DISPLAY_ARTICLELIST_FONTSIZE" android:summary="@string/settings_display_articlelist_fontsize_summary" android:defaultValue="2" android:entryValues="@array/font_size_values" />
+            <ListPreference android:entries="@array/sortarticleby_entries" android:title="@string/settings_display_sortarticleby_title" android:key="SETTINGS_DISPLAY_SORTARTICLEBY" android:summary="@string/settings_display_sortarticleby_summary" android:defaultValue="3" android:entryValues="@array/sortarticleby_values" />
+            <CheckBoxPreference android:title="@string/settings_display_keepstarredtop_title" android:key="SETTINGS_DISPLAY_KEEPSTARTOP" android:summary="@string/settings_display_keepstarredtop_summary" android:defaultValue="false" />
+            <ListPreference android:entries="@array/articlelistitemlayout_entries" android:title="@string/settings_display_articlelistitemlayout_title" android:key="SETTINGS_DISPLAY_ARTICLELISTITEMLAYOUT" android:summary="@string/settings_display_articlelistitemlayout_summary" android:defaultValue="CLASSIC_RICH" android:entryValues="@array/articlelistitemlayout_values" />
+            <ListPreference android:entries="@array/thumbnaildimension_entries" android:title="@string/settings_display_thumbnaildimension_title" android:key="SETTINGS_DISPLAY_THUMBNAILDIMENSION" android:summary="@string/settings_display_thumbnaildimension_summary" android:defaultValue="70" android:entryValues="@array/thumbnaildimension_values" />
+            <ListPreference android:entries="@array/swipeaction_entries" android:title="@string/settings_display_swipelefttoright_title" android:key="SETTINGS_DISPLAY_SWIPELEFTTORIGHT" android:summary="@string/settings_display_swipelefttoright_summary" android:defaultValue="NONE" android:entryValues="@array/swipeaction_values" />
+            <ListPreference android:entries="@array/swipeaction_entries" android:title="@string/settings_display_swiperighttoleft_title" android:key="SETTINGS_DISPLAY_SWIPERIGHTTOLEFT" android:summary="@string/settings_display_swiperighttoleft_summary" android:defaultValue="NONE" android:entryValues="@array/swipeaction_values" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/settings_display_reading_options">
+            <ListPreference android:entries="@array/font_size_entries" android:title="@string/settings_display_article_fontsize_title" android:key="SETTINGS_DISPLAY_ARTICLE_FONTSIZE" android:summary="@string/settings_display_article_fontsize_summary" android:defaultValue="2" android:entryValues="@array/font_size_values" />
+            <ListPreference android:entries="@array/font_family_entries" android:title="@string/settings_display_article_fontfamily_title" android:key="SETTINGS_DISPLAY_ARTICLE_FONTFAMILY" android:summary="@string/settings_display_article_fontfamily_summary" android:defaultValue="0" android:entryValues="@array/font_family_values" />
+            <ListPreference android:entries="@array/linespacing_entries" android:title="@string/settings_display_article_linespacing_title" android:key="SETTINGS_DISPLAY_ARTICLE_LINESPACING" android:summary="@string/settings_display_article_linespacing_summary" android:defaultValue="2" android:entryValues="@array/linespacing_values" />
+            <CheckBoxPreference android:title="@string/settings_display_keepstarredunread_title" android:key="SETTINGS_DISPLAY_KEEPSTARREDUNREAD" android:summary="@string/settings_display_keepstarredunread_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/settings_display_smartresizeimage_title" android:key="SETTINGS_DISPLAY_SMARTRESIZEIMAGE" android:summary="@string/settings_display_smartresizeimage_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/settings_display_viewimageontouch_title" android:key="SETTINGS_DISPLAY_VIEWIMAGEONTOUCH" android:summary="@string/settings_display_viewimageontouch_summary" android:defaultValue="true" />
+            <ListPreference android:entries="@array/skipimagedimension_entries" android:title="@string/settings_display_skipimagedimension_title" android:key="SETTINGS_DISPLAY_SKIPIMAGEDIMENSION" android:summary="@string/settings_display_skipimagedimension_summary" android:defaultValue="30" android:entryValues="@array/skipimagedimension_values" />
+            <ListPreference android:entries="@array/skipimagesize_entries" android:title="@string/settings_display_skipimagesize_title" android:key="SETTINGS_DISPLAY_SKIPIMAGESIZE" android:summary="@string/settings_display_skipimagesize_summary" android:defaultValue="800" android:entryValues="@array/skipimagesize_values" />
+            <ListPreference android:entries="@array/volumekeyaction_entries" android:title="@string/settings_display_volumekeyaction_title" android:key="SETTINGS_DISPLAY_VOLUMEKEYACTION" android:summary="@string/settings_display_volumekeyaction_summary" android:defaultValue="PREVIOUS_NEXT" android:entryValues="@array/volumekeyaction_values" />
+            <CheckBoxPreference android:title="@string/settings_display_continue_on_limit_title" android:key="SETTINGS_DISPLAY_CONTINUEONLIMIT" android:summary="@string/settings_display_continue_on_limit_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/settings_display_haptic_on_limit_title" android:key="SETTINGS_DISPLAY_HAPTICONLIMIT" android:summary="@string/settings_display_haptic_on_limit_summary" android:defaultValue="true" />
+            <ListPreference android:entries="@array/quickactionbar_entries" android:title="@string/settings_display_quickactionbar_title" android:key="SETTINGS_DISPLAY_QUICKACTIONBAR" android:summary="@string/settings_display_quickactionbar_summary" android:defaultValue="TOOLBAR" android:entryValues="@array/quickactionbar_values" />
+            <PreferenceScreen android:title="@string/settings_display_toolbaricons_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS" android:summary="@string/settings_display_toolbaricons_summary">
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_previous_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_PREVIOUS" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_star_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_STAR" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_open_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_OPEN" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_mobilize_instapaper_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_MOBILIZE_INSTAPAPER" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_mobilize_google_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_MOBILIZE_GOOGLE" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_delete_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_DELETE" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_share_link_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_SHARE_LINK" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_share_facebook_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_SHARE_FACEBOOK" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_share_twitter_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_SHARE_TWITTER" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/settings_display_toolbaricons_next_title" android:key="SETTINGS_DISPLAY_TOOLBARICONS_NEXT" android:defaultValue="true" />
+            </PreferenceScreen>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/setting_media_title" android:key="SETTINGS_MEDIA" android:summary="@string/setting_media_summary">
+        <PreferenceCategory android:title="@string/setting_media_options">
+            <CheckBoxPreference android:title="@string/setting_media_react_to_headset_title" android:key="SETTINGS_MEDIA_REACT_TO_HEADSET" android:summary="@string/setting_media_react_to_headset_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/setting_media_pause_headset_disconnected_title" android:key="SETTINGS_MEDIA_PAUSE_HEADSET_DISCONNECTED" android:summary="@string/setting_media_pause_headset_disconnected_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/setting_media_pause_power_removal_title" android:key="SETTINGS_MEDIA_PAUSE_POWER_REMOVAL" android:summary="@string/setting_media_pause_power_removal_summary" android:defaultValue="false" />
+            <ListPreference android:entries="@array/sortplaylistby_entries" android:title="@string/settings_display_sortplaylistby_title" android:key="SETTINGS_DISPLAY_SORTPLAYLISTBY" android:summary="@string/settings_display_sortplaylistby_summary" android:defaultValue="0" android:entryValues="@array/sortplaylistby_values" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/settings_updates_title" android:key="SETTINGS_UPDATES_SCREEN" android:summary="@string/settings_updates_summary">
+        <PreferenceCategory android:title="@string/settings_updates_options" android:key="SETTINGS_UPDATES_OPTIONS">
+            <CheckBoxPreference android:title="@string/settings_updates_auto_title" android:key="SETTINGS_UPDATES_AUTO" android:summary="@string/settings_updates_auto_summary" android:defaultValue="true" />
+            <ListPreference android:entries="@array/updateinterval_entries" android:title="@string/settings_updates_updateinterval_title" android:key="SETTINGS_UPDATES_UPDATEINTERVAL" android:summary="@string/settings_updates_updateinterval_summary" android:defaultValue="60" android:entryValues="@array/updateinterval_values" />
+            <CheckBoxPreference android:title="@string/settings_updates_update_on_startup_title" android:key="SETTINGS_UPDATES_UPDATE_ON_STARTUP" android:summary="@string/settings_updates_update_on_startup_summary" android:defaultValue="false" />
+            <ListPreference android:entries="@array/articledownloadprovider_entries" android:title="@string/settings_updates_articledownloadprovider_title" android:key="SETTINGS_UPDATES_ARTICLEDOWNLOADPROVIDER" android:summary="@string/settings_updates_articledownloadprovider_summary" android:defaultValue="INSTAPAPER_MOBILIZER" android:entryValues="@array/articledownloadprovider_values" />
+            <CheckBoxPreference android:title="@string/settings_updates_nodatainroaming_title" android:key="SETTINGS_UPDATES_NODATAINROAMING" android:summary="@string/settings_updates_nodatainroaming_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/settings_updates_wifionly_article_title" android:key="SETTINGS_UPDATES_WIFIONLY" android:summary="@string/settings_updates_wifionly_article_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/settings_updates_wifionly_articleimage_title" android:key="SETTINGS_UPDATES_WIFIONLY_IMAGE" android:summary="@string/settings_updates_wifionly_articleimage_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/settings_updates_wifionly_podcast_title" android:key="SETTINGS_UPDATES_WIFIONLY_PODCAST" android:summary="@string/settings_updates_wifionly_podcast_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/settings_message_title" android:summary="@string/settings_message_summary">
+        <PreferenceCategory android:title="@string/settings_message_options">
+            <ListPreference android:entries="@array/messagelimit_entries" android:title="@string/settings_message_limit_title" android:key="SETTINGS_MESSAGE_LIMIT" android:summary="@string/settings_message_limit_summary" android:defaultValue="0" android:entryValues="@array/messagelimit_values" />
+            <CheckBoxPreference android:title="@string/settings_message_keepunreaditems_title" android:key="SETTINGS_MESSAGE_KEEPUNREADITEMS" android:summary="@string/settings_message_keepunreaditems_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/settings_message_sdcardforstorage_title" android:key="SETTINGS_MESSAGE_SDCARDFORSTORAGE" android:summary="@string/settings_message_sdcardforstorage_summary" android:defaultValue="true" />
+            <ListPreference android:entries="@array/clearcacheinterval_entries" android:title="@string/settings_message_clearcacheinterval_title" android:key="SETTINGS_MESSAGE_CLEARCACHEINTERVAL" android:summary="@string/settings_message_clearcacheinterval_summary" android:defaultValue="2" android:entryValues="@array/clearcacheinterval_values" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/settings_message_auto_cleanup_options">
+            <ListPreference android:entries="@array/autocleanup_entries" android:title="@string/settings_message_auto_cleanup_read_title" android:key="SETTINGS_MESSAGE_AUTO_CLEANUP_READ" android:summary="@string/settings_message_auto_cleanup_read_summary" android:defaultValue="0" android:entryValues="@array/autocleanup_values" />
+            <ListPreference android:entries="@array/autocleanup_entries" android:title="@string/settings_message_auto_cleanup_unread_title" android:key="SETTINGS_MESSAGE_AUTO_CLEANUP_UNREAD" android:summary="@string/settings_message_auto_cleanup_unread_summary" android:defaultValue="0" android:entryValues="@array/autocleanup_values" />
+            <CheckBoxPreference android:title="@string/settings_message_auto_cleanup_keep_star_title" android:key="SETTINGS_MESSAGE_AUTO_CLEANUP_KEEP_STAR" android:summary="@string/settings_message_auto_cleanup_keep_star_summary" android:defaultValue="true" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/settings_notifications_title" android:summary="@string/settings_notifications_summary">
+        <PreferenceCategory android:title="@string/settings_notifications_options">
+            <CheckBoxPreference android:title="@string/settings_notifications_notification_title" android:key="SETTINGS_NOTIFICATIONS_NOTIFICATION" android:summary="@string/settings_notifications_notification_summary" android:defaultValue="true" />
+            <RingtonePreference android:title="@string/settings_notifications_ringtone_title" android:key="SETTINGS_NOTIFICATIONS_RINGTONE" android:summary="@string/settings_notifications_ringtone_summary" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+            <CheckBoxPreference android:title="@string/settings_notifications_vibrate_title" android:key="SETTINGS_NOTIFICATIONS_VIBRATE" android:summary="@string/settings_notifications_vibrate_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/settings_notifications_flashlight_title" android:key="SETTINGS_NOTIFICATIONS_FLASHLIGHT" android:summary="@string/settings_notifications_flashlight_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/settings_advanced_title" android:summary="@string/settings_advanced_summary">
+        <PreferenceCategory android:title="@string/settings_advanced_options">
+            <EditTextPreference android:title="@string/settings_advanced_useragent_title" android:key="SETTINGS_ADVANCED_USERAGENT" android:summary="@string/settings_advanced_useragent_summary" android:defaultValue="" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/settings_backuprestore_title" android:key="SETTINGS_BACKUPRESTORE" android:summary="@string/settings_backuprestore_summary" />
+    <PreferenceScreen android:title="@string/settings_about_title" android:key="SETTINGS_ABOUT" />
+</PreferenceScreen>

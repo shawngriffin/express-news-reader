@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/pause" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/media_player_play_button_selector" android:layout_centerInParent="true" style="@android:style/MediaButton.Play" />
+    <ImageButton android:id="@id/prev" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_player_prev_button_selector" android:layout_toLeftOf="@id/pause" android:layout_alignTop="@id/pause" style="@android:style/MediaButton.Previous" />
+    <ImageButton android:id="@id/next" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_player_next_button_selector" android:layout_toRightOf="@id/pause" android:layout_alignTop="@id/pause" style="@android:style/MediaButton.Next" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_refresh" android:id="@id/playlist_option_menu_update_all" android:title="@string/update_all" />
+    <item android:icon="@drawable/ic_menu_stop" android:id="@id/playlist_option_menu_stop_update" android:title="@string/stop_update" />
+    <item android:icon="@drawable/ic_menu_clear_playlist" android:id="@id/playlist_option_menu_clear_playlist" android:title="@string/clear_playlist" />
+    <item android:icon="@drawable/ic_menu_revert" android:id="@id/playlist_option_menu_repeat" android:title="@string/repeat" />
+    <item android:icon="@drawable/ic_menu_shuffle" android:id="@id/playlist_option_menu_shuffle" android:title="@string/shuffle" />
+    <item android:icon="@drawable/ic_menu_sleep_mode" android:id="@id/playlist_option_menu_sleep" android:title="@string/sleep_timer" />
+</menu>

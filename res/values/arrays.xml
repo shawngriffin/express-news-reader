@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="theme_entries">
+        <item>@string/theme_dark_theme</item>
+        <item>@string/theme_light_theme</item>
+    </array>
+    <string-array name="theme_values">
+        <item>DARK_THEME</item>
+        <item>LIGHT_THEME</item>
+    </string-array>
+    <array name="updateinterval_entries">
+        <item>@string/updateinterval_1_min</item>
+        <item>@string/updateinterval_2_mins</item>
+        <item>@string/updateinterval_3_mins</item>
+        <item>@string/updateinterval_5_mins</item>
+        <item>@string/updateinterval_15_mins</item>
+        <item>@string/updateinterval_30_mins</item>
+        <item>@string/updateinterval_1_hour</item>
+        <item>@string/updateinterval_2_hours</item>
+        <item>@string/updateinterval_4_hours</item>
+        <item>@string/updateinterval_8_hours</item>
+        <item>@string/updateinterval_12_hours</item>
+        <item>@string/updateinterval_24_hours</item>
+    </array>
+    <string-array name="updateinterval_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>240</item>
+        <item>480</item>
+        <item>720</item>
+        <item>1440</item>
+    </string-array>
+    <array name="messagelimit_entries">
+        <item>@string/messagelimit_same_as_server</item>
+        <item>@string/messagelimit_5</item>
+        <item>@string/messagelimit_15</item>
+        <item>@string/messagelimit_25</item>
+        <item>@string/messagelimit_35</item>
+        <item>@string/messagelimit_50</item>
+        <item>@string/messagelimit_75</item>
+        <item>@string/messagelimit_100</item>
+        <item>@string/messagelimit_125</item>
+        <item>@string/messagelimit_150</item>
+        <item>@string/messagelimit_200</item>
+        <item>@string/messagelimit_300</item>
+        <item>@string/messagelimit_400</item>
+        <item>@string/messagelimit_500</item>
+        <item>@string/messagelimit_600</item>
+        <item>@string/messagelimit_800</item>
+        <item>@string/messagelimit_1000</item>
+    </array>
+    <string-array name="messagelimit_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>25</item>
+        <item>35</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+    <array name="sortarticleby_entries">
+        <item>@string/unread_first</item>
+        <item>@string/read_first</item>
+        <item>@string/publish_date_ascending</item>
+        <item>@string/publish_date_descending</item>
+        <item>@string/download_date_ascending</item>
+        <item>@string/download_date_descending</item>
+        <item>@string/title</item>
+    </array>
+    <string-array name="sortarticleby_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+    </string-array>
+    <array name="font_size_entries">
+        <item>@string/extra_small</item>
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+    </array>
+    <string-array name="font_size_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <array name="encoding_entries">
+        <item>@string/auto_detect</item>
+        <item>Unicode (UTF-8)</item>
+        <item>Western (ISO-8859-1)</item>
+        <item>Western (Windows-1252)</item>
+        <item>Western (ISO-8859-15)</item>
+        <item>Arabic (Windows-1256)</item>
+        <item>Arabic (ISO-8859-6)</item>
+        <item>Baltic (ISO-8859-4)</item>
+        <item>Baltic (ISO-8859-13)</item>
+        <item>Baltic (Windows-1257)</item>
+        <item>Celtic (ISO-8859-14)</item>
+        <item>Central European (ISO-8859-2)</item>
+        <item>Central European (Windows-1250)</item>
+        <item>Chinese Simplified (GBK)</item>
+        <item>Chinese Simplified (gb18030)</item>
+        <item>Chinese Traditional (Big5)</item>
+        <item>Chinese Traditional (Big5-HKSCS)</item>
+        <item>Chinese Traditional (EUC-TW)</item>
+        <item>Cyrillic (ISO-8859-5)</item>
+        <item>Cyrillic (Windows-1251)</item>
+        <item>Cyrillic (KOI8-R)</item>
+        <item>Cyrillic (KOI8-U)</item>
+        <item>Greek (ISO-8859-7)</item>
+        <item>Greek (Windows-1253)</item>
+        <item>Hebrew (Windows-1255)</item>
+        <item>Hebrew (ISO-8859-8-I)</item>
+        <item>Hebrew (ISO-8859-8)</item>
+        <item>Japanese (Shift_JIS)</item>
+        <item>Japanese (EUC-JP)</item>
+        <item>Japanese (ISO-2022-JP)</item>
+        <item>Nordic (ISO-8859-10)</item>
+        <item>Romanian (ISO-8859-16)</item>
+        <item>South European (ISO-8859-3)</item>
+        <item>Turkish (Windows-1254)</item>
+        <item>Vietnamese (Windows-1258)</item>
+        <item>US-ASCII</item>
+        <item>Unicode (UTF-16)</item>
+        <item>Unicode (UTF-16BE)</item>
+        <item>Unicode (UTF-16LE)</item>
+    </array>
+    <string-array name="encoding_values">
+        <item></item>
+        <item>UTF-8</item>
+        <item>ISO-8859-1</item>
+        <item>Windows-1252</item>
+        <item>ISO-8859-15</item>
+        <item>Windows-1256</item>
+        <item>ISO-8859-6</item>
+        <item>ISO-8859-4</item>
+        <item>ISO-8859-13</item>
+        <item>Windows-1257</item>
+        <item>ISO-8859-14</item>
+        <item>ISO-8859-2</item>
+        <item>Windows-1250</item>
+        <item>GBK</item>
+        <item>gb18030</item>
+        <item>Big5</item>
+        <item>Big5-HKSCS</item>
+        <item>EUC-TW</item>
+        <item>ISO-8859-5</item>
+        <item>Windows-1251</item>
+        <item>KOI8-R</item>
+        <item>KOI8-U</item>
+        <item>ISO-8859-7</item>
+        <item>Windows-1253</item>
+        <item>Windows-1255</item>
+        <item>ISO-8859-8-I</item>
+        <item>ISO-8859-8</item>
+        <item>Shift_JIS</item>
+        <item>EUC-JP</item>
+        <item>ISO-2022-JP</item>
+        <item>ISO-8859-10</item>
+        <item>ISO-8859-16</item>
+        <item>ISO-8859-3</item>
+        <item>Windows-1254</item>
+        <item>Windows-1258</item>
+        <item>US-ASCII</item>
+        <item>UTF-16</item>
+        <item>UTF-16BE</item>
+        <item>UTF-16LE</item>
+    </string-array>
+    <array name="volumekeyaction_entries">
+        <item>@string/previous_next_article</item>
+        <item>@string/scroll_up_down</item>
+        <item>@string/none</item>
+    </array>
+    <string-array name="volumekeyaction_values">
+        <item>PREVIOUS_NEXT</item>
+        <item>UP_DOWN</item>
+        <item>NONE</item>
+    </string-array>
+    <string-array name="dateformater_entries">
+        <item>System Default</item>
+        <item>yy.MM.dd H:mm</item>
+        <item>yyyy/M/d a hh:mm</item>
+        <item>yyyy/MM/dd hh:mm a</item>
+        <item>yyyy/MM/dd H:mm</item>
+        <item>yyyy/MM/dd HH:mm</item>
+        <item>yyyy-M-d H:mm</item>
+        <item>yyyy-MM-dd h:mm.a</item>
+        <item>yyyy-MM-dd HH:mm</item>
+        <item>yyyy-MM-dd a h:mm</item>
+        <item>yyyy.MM.dd H:mm</item>
+        <item>yyyy.MM.dd HH:mm</item>
+        <item>d.MM.yyyy H:mm</item>
+        <item>d.M.yyyy HH:mm</item>
+        <item>dd.M.yyyy HH:mm</item>
+        <item>dd.MM.yyyy H:mm</item>
+        <item>dd.MM.yyyy HH:mm</item>
+        <item>dd.MM.yy H:mm:ss</item>
+        <item>d.M.yyyy H:mm</item>
+        <item>d/M/yyyy H:mm</item>
+        <item>d/M/yyyy h:mm a</item>
+        <item>d/M/yyyy a h:mm</item>
+        <item>d/MM/yyyy H:mm</item>
+        <item>d/MM/yyyy h:mm a</item>
+        <item>dd/MM/yyyy h:mm a</item>
+        <item>dd/MM/yyyy hh:mm a</item>
+        <item>dd/MM/yyyy H:mm</item>
+        <item>dd/MM/yyyy HH:mm</item>
+        <item>d-M-yyyy H:mm</item>
+        <item>dd-MM-yyyy H:mm</item>
+        <item>dd-MM-yyyy HH:mm</item>
+        <item>MM/dd/yyyy h:mm a</item>
+        <item>M/d/yyyy h:mm a</item>
+    </string-array>
+    <string-array name="dateformater_values">
+        <item></item>
+        <item>yy.MM.dd H:mm</item>
+        <item>yyyy/M/d a hh:mm</item>
+        <item>yyyy/MM/dd hh:mm a</item>
+        <item>yyyy/MM/dd H:mm</item>
+        <item>yyyy/MM/dd HH:mm</item>
+        <item>yyyy-M-d H:mm</item>
+        <item>yyyy-MM-dd h:mm.a</item>
+        <item>yyyy-MM-dd HH:mm</item>
+        <item>yyyy-MM-dd a h:mm</item>
+        <item>yyyy.MM.dd H:mm</item>
+        <item>yyyy.MM.dd HH:mm</item>
+        <item>d.MM.yyyy H:mm</item>
+        <item>d.M.yyyy HH:mm</item>
+        <item>dd.M.yyyy HH:mm</item>
+        <item>dd.MM.yyyy H:mm</item>
+        <item>dd.MM.yyyy HH:mm</item>
+        <item>dd.MM.yy H:mm:ss</item>
+        <item>d.M.yyyy H:mm</item>
+        <item>d/M/yyyy H:mm</item>
+        <item>d/M/yyyy h:mm a</item>
+        <item>d/M/yyyy a h:mm</item>
+        <item>d/MM/yyyy H:mm</item>
+        <item>d/MM/yyyy h:mm a</item>
+        <item>dd/MM/yyyy h:mm a</item>
+        <item>dd/MM/yyyy hh:mm a</item>
+        <item>dd/MM/yyyy H:mm</item>
+        <item>dd/MM/yyyy HH:mm</item>
+        <item>d-M-yyyy H:mm</item>
+        <item>dd-MM-yyyy H:mm</item>
+        <item>dd-MM-yyyy HH:mm</item>
+        <item>MM/dd/yyyy h:mm a</item>
+        <item>M/d/yyyy h:mm a</item>
+    </string-array>
+    <array name="quickactionbar_entries">
+        <item>@string/thumbnail_navigator</item>
+        <item>@string/toolbar</item>
+        <item>@string/none</item>
+    </array>
+    <string-array name="quickactionbar_values">
+        <item>THUMBNAIL</item>
+        <item>TOOLBAR</item>
+        <item>NONE</item>
+    </string-array>
+    <array name="clearcacheinterval_entries">
+        <item>@string/every_update</item>
+        <item>@string/one_day</item>
+        <item>@string/two_days</item>
+        <item>@string/three_days</item>
+        <item>@string/four_days</item>
+        <item>@string/five_days</item>
+        <item>@string/one_week</item>
+        <item>@string/two_week</item>
+        <item>@string/four_week</item>
+        <item>@string/never</item>
+    </array>
+    <string-array name="clearcacheinterval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>14</item>
+        <item>28</item>
+        <item>-1</item>
+    </string-array>
+    <array name="articlelistitemlayout_entries">
+        <item>@string/classic_rich</item>
+        <item>@string/classic_simple</item>
+    </array>
+    <string-array name="articlelistitemlayout_values">
+        <item>CLASSIC_RICH</item>
+        <item>CLASSIC_SIMPLE</item>
+    </string-array>
+    <array name="feedlistitemlayout_entries">
+        <item>@string/classic_rich</item>
+        <item>@string/classic_simple</item>
+    </array>
+    <string-array name="feedlistitemlayout_values">
+        <item>CLASSIC_RICH</item>
+        <item>CLASSIC_SIMPLE</item>
+    </string-array>
+    <string-array name="skipimagedimension_entries">
+        <item>0 px</item>
+        <item>10 px</item>
+        <item>20 px</item>
+        <item>30 px</item>
+        <item>40 px</item>
+        <item>60 px</item>
+        <item>80 px</item>
+        <item>100 px</item>
+        <item>200 px</item>
+        <item>400 px</item>
+    </string-array>
+    <string-array name="skipimagedimension_values">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="skipimagesize_entries">
+        <item>10 KB</item>
+        <item>20 KB</item>
+        <item>40 KB</item>
+        <item>60 KB</item>
+        <item>80 KB</item>
+        <item>100 KB</item>
+        <item>200 KB</item>
+        <item>400 KB</item>
+        <item>600 KB</item>
+        <item>800 KB</item>
+        <item>1 MB</item>
+        <item>2 MB</item>
+        <item>4 MB</item>
+    </string-array>
+    <string-array name="skipimagesize_values">
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>4096</item>
+    </string-array>
+    <array name="thumbnaildimension_entries">
+        <item>@string/extra_small</item>
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+    </array>
+    <string-array name="thumbnaildimension_values">
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+    </string-array>
+    <array name="sortfeedby_entries">
+        <item>@string/unread_first</item>
+        <item>@string/read_first</item>
+        <item>@string/publish_date_ascending</item>
+        <item>@string/publish_date_descending</item>
+        <item>@string/title</item>
+        <item>@string/user_defined</item>
+    </array>
+    <string-array name="sortfeedby_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <array name="sortgroupby_entries">
+        <item>@string/title</item>
+        <item>@string/unread_first</item>
+        <item>@string/read_first</item>
+        <item>@string/user_defined</item>
+    </array>
+    <string-array name="sortgroupby_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <array name="swipeaction_entries">
+        <item>@string/none</item>
+        <item>@string/toggle_read</item>
+        <item>@string/toggle_star</item>
+        <item>@string/delete</item>
+    </array>
+    <string-array name="swipeaction_values">
+        <item>NONE</item>
+        <item>TOGGLE_READ</item>
+        <item>TOGGLE_STAR</item>
+        <item>DELETE</item>
+    </string-array>
+    <array name="autocleanup_entries">
+        <item>@string/never</item>
+        <item>@string/one_day</item>
+        <item>@string/two_days</item>
+        <item>@string/three_days</item>
+        <item>@string/four_days</item>
+        <item>@string/five_days</item>
+        <item>@string/one_week</item>
+        <item>@string/two_week</item>
+        <item>@string/four_week</item>
+    </array>
+    <string-array name="autocleanup_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>14</item>
+        <item>28</item>
+    </string-array>
+    <array name="linespacing_entries">
+        <item>@string/extra_small</item>
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+    </array>
+    <string-array name="linespacing_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="font_family_entries">
+        <item>Sans</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+    <string-array name="font_family_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="skipsecond_entries">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="skipsecond_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <array name="playlist_repeat_entries">
+        <item>@string/repeat_off</item>
+        <item>@string/repeat_podcast</item>
+        <item>@string/repeat_playlist</item>
+    </array>
+    <string-array name="playlist_repeat_values">
+        <item>REPEAT_OFF</item>
+        <item>REPEAT_PODCAST</item>
+        <item>REPEAT_PLAYLIST</item>
+    </string-array>
+    <array name="playlist_shuffle_entries">
+        <item>@string/shuffle_off</item>
+        <item>@string/shuffle_on</item>
+    </array>
+    <string-array name="playlist_shuffle_values">
+        <item>SHUFFLE_OFF</item>
+        <item>SHUFFLE_ON</item>
+    </string-array>
+    <array name="articledownloadprovider_entries">
+        <item>@string/instapaper_mobilizer</item>
+        <item>@string/google_mobilizer</item>
+    </array>
+    <string-array name="articledownloadprovider_values">
+        <item>INSTAPAPER_MOBILIZER</item>
+        <item>GOOGLE_MOBILIZER</item>
+    </string-array>
+    <string-array name="translation_language_entries">
+        <item>Afrikaans</item>
+        <item>Shqip (Albanian)</item>
+        <item>العربية (Arabic)</item>
+        <item>Հայերէն (Armenian)</item>
+        <item>Azerbaijani</item>
+        <item>Euskara (Basque)</item>
+        <item>Беларуская мова (Belarusian)</item>
+        <item>Bengali</item>
+        <item>Български (Bulgarian)</item>
+        <item>Català (Catalan)</item>
+        <item>中文(简体) (Chinese Simplified)</item>
+        <item>中文(繁体) (Chinese Traditional)</item>
+        <item>Hrvatski (Croatian)</item>
+        <item>Čeština (Czech)</item>
+        <item>Dansk (Danish)</item>
+        <item>Nederlands (Dutch)</item>
+        <item>English</item>
+        <item>Eesti keel (Estonian)</item>
+        <item>Filipino</item>
+        <item>Suomi (Finnish)</item>
+        <item>Français (French)</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>Deutsch (German)</item>
+        <item>ελληνικά (Greek)</item>
+        <item>Gujarati</item>
+        <item>Haitian Creole</item>
+        <item>עברית (Hebrew)</item>
+        <item>हिन्दी (Hindi)</item>
+        <item>Magyar (Hungarian)</item>
+        <item>Íslenska (Icelandic)</item>
+        <item>Bahasa Indonesia (Indonesian)</item>
+        <item>Irish</item>
+        <item>Italiano (Italian)</item>
+        <item>日本語 (Japanese)</item>
+        <item>Kannada</item>
+        <item>한국어 (Korean)</item>
+        <item>Latin</item>
+        <item>Latviešu valoda (Latvian)</item>
+        <item>Lietuvių kalba (Lithuanian)</item>
+        <item>Macedonian</item>
+        <item>Bahasa melayu (Malay)</item>
+        <item>Malti (Maltese)</item>
+        <item>Norsk (Norwegian)</item>
+        <item>Persian</item>
+        <item>Polski (Polish)</item>
+        <item>Português (Portuguese)</item>
+        <item>Limba română (Romanian)</item>
+        <item>Русский (Russian)</item>
+        <item>Cрпски (Serbian)</item>
+        <item>Slovenčina (Slovak)</item>
+        <item>Slovenščina (Slovenian)</item>
+        <item>Español (Spanish)</item>
+        <item>Kiswahili (Swahili)</item>
+        <item>Svenska (Swedish)</item>
+        <item>தமிழ் (Tamil)</item>
+        <item>Telugu</item>
+        <item>ภาษาไทย (Thai)</item>
+        <item>Türkçe (Turkish)</item>
+        <item>Український (Ukrainian)</item>
+        <item>Urdu</item>
+        <item>tiếng việt (Vietnamese)</item>
+        <item>Welsh</item>
+        <item>Yiddish</item>
+    </string-array>
+    <string-array name="translation_language_values">
+        <item>af</item>
+        <item>sq</item>
+        <item>ar</item>
+        <item>hy</item>
+        <item>az</item>
+        <item>eu</item>
+        <item>be</item>
+        <item>bn</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>nl</item>
+        <item>en</item>
+        <item>et</item>
+        <item>tl</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>ka</item>
+        <item>de</item>
+        <item>el</item>
+        <item>gu</item>
+        <item>ht</item>
+        <item>iw</item>
+        <item>hi</item>
+        <item>hu</item>
+        <item>is</item>
+        <item>id</item>
+        <item>ga</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>mk</item>
+        <item>ms</item>
+        <item>mt</item>
+        <item>no</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sr</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>es</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>vi</item>
+        <item>cy</item>
+        <item>yi</item>
+    </string-array>
+    <array name="sortplaylistby_entries">
+        <item>@string/user_defined</item>
+        <item>@string/publish_date_ascending</item>
+        <item>@string/publish_date_descending</item>
+        <item>@string/download_date_ascending</item>
+        <item>@string/download_date_descending</item>
+        <item>@string/title</item>
+    </array>
+    <string-array name="sortplaylistby_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

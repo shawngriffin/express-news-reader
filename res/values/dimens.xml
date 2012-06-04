@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tabbar_height">60.0dip</dimen>
+    <dimen name="tabbar_icon_dim">30.0dip</dimen>
+    <dimen name="tabbar_icon_padding_top">6.0dip</dimen>
+    <dimen name="tabbar_text_fontsize">11.0dip</dimen>
+    <dimen name="tabbar_text_padding_top">12.0dip</dimen>
+    <dimen name="tile_text">11.0sp</dimen>
+    <dimen name="tile_text_small">10.0sp</dimen>
+    <dimen name="widget_width">297.0dip</dimen>
+    <dimen name="widget_image_width">95.0dip</dimen>
+    <dimen name="widget_tile_width">95.0dip</dimen>
+    <dimen name="widget_gap">2.0dip</dimen>
+    <dimen name="widget_tile_text">11.0sp</dimen>
+    <dimen name="drawer_tab_height">60.0dip</dimen>
+    <dimen name="thumbnail_size">110.0dip</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appyet.mobile.view.colorpicker.ColorPickerView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/colorpicker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:id="@id/colorpicker_transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/transparent" android:layout_weight="50.0" />
+        <Button android:id="@id/colorpicker_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="50.0" />
+    </LinearLayout>
+</LinearLayout>

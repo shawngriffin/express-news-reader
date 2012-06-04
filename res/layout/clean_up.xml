@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff252525" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip">
+        <TextView android:id="@id/clean_up_read_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/cleanup_read_title" />
+        <Spinner android:entries="@array/autocleanup_entries" android:id="@id/clean_up_read_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+        <TextView android:id="@id/clean_up_unread_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/cleanup_unread_title" />
+        <Spinner android:entries="@array/autocleanup_entries" android:id="@id/clean_up_unread_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+        <CheckBox android:id="@id/keep_starred_articles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/cleanup_keep_star" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/dialog_background" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/clean_up" android:layout_weight="50.0" />
+        <Button android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/cancel" android:layout_weight="50.0" />
+    </LinearLayout>
+</LinearLayout>

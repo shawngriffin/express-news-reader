@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff252525" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/ScrollView01" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0">
+            <TextView android:textSize="16.0sp" android:id="@id/group_name_label" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title" />
+            <EditText android:id="@id/group_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="bottom" android:background="@color/dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-50.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0">
+            <Button android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="50.0" />
+            <Button android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="50.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

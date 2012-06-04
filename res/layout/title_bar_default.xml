@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" style="@style/title_bar">
+        <ImageView android:id="@id/title_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/title_icon" />
+        <TextView android:textStyle="bold" android:ellipsize="marquee" android:id="@id/title_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="108.0dip" android:layout_toRightOf="@id/title_icon" android:layout_centerVertical="true" style="@style/title_text" />
+    </RelativeLayout>
+    <View style="@style/title_divider" />
+</merge>

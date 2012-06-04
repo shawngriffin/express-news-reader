@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title_bar_feeditem" />
+    <TextView android:id="@id/feeditem_empty" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_items" />
+    <ListView android:id="@id/feeditem_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:divider="@drawable/list_divider" android:dividerHeight="1.0px" />
+    <GridView android:id="@id/feeditem_grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" style="@style/gridView" />
+</LinearLayout>

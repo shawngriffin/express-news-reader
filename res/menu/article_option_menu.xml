@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_web" android:id="@id/article_option_menu_open" android:title="@string/open" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/ic_menu_web" android:id="@id/article_option_menu_mobilize" android:title="@string/mobilize" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/ic_menu_star" android:id="@id/article_option_menu_togglestar" android:title="@string/toggle_star" />
+    <item android:icon="@drawable/ic_menu_delete" android:id="@id/article_option_menu_delete" android:title="@string/delete" />
+    <item android:icon="@drawable/ic_menu_font" android:id="@id/article_option_menu_fontsize" android:title="@string/font_size" />
+    <item android:icon="@drawable/ic_menu_my_downloads" android:id="@id/article_option_menu_download_article" android:title="@string/download_article" />
+    <item android:icon="@drawable/ic_menu_my_downloads" android:id="@id/article_option_menu_undownload_article" android:title="@string/undownload_article" />
+    <item android:icon="@drawable/ic_menu_my_downloads" android:id="@id/article_option_menu_download_podcast" android:title="@string/download_podcast" />
+    <item android:icon="@drawable/ic_menu_my_downloads" android:id="@id/article_option_menu_undownload_podcast" android:title="@string/undownload_podcast" />
+    <item android:icon="@drawable/ic_menu_share" android:id="@id/article_option_menu_sharelink" android:title="@string/share_link" />
+    <item android:icon="@drawable/ic_menu_share" android:id="@id/article_option_menu_sharearticle" android:title="@string/share_article" />
+    <item android:id="@id/article_option_menu_viewcomments" android:title="@string/view_comments" />
+    <item android:id="@id/article_option_menu_copylink" android:title="@string/copy_link" />
+    <item android:icon="@drawable/ic_menu_translate" android:id="@id/article_option_menu_translate" android:title="@string/translate" />
+    <item android:icon="@drawable/ic_menu_fullscreen" android:id="@id/article_option_menu_fullscreen_on" android:title="@string/fullscreen_on" />
+    <item android:icon="@drawable/ic_menu_fullscreen" android:id="@id/article_option_menu_fullscreen_off" android:title="@string/fullscreen_off" />
+</menu>

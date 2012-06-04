@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" style="@style/title_bar">
+        <ImageView android:id="@id/title_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/title_icon" />
+        <ImageButton android:id="@id/title_button_star" android:src="@drawable/ic_bar_star_off" android:layout_alignParentRight="true" android:layout_centerInParent="true" style="@style/title_action_icon" />
+        <ImageView android:id="@id/title_divider_star" android:layout_toLeftOf="@id/title_button_star" style="@style/title_button_divider" />
+        <ImageButton android:id="@id/title_button_podcast" android:src="@drawable/ic_bar_podcast" android:layout_toLeftOf="@id/title_divider_star" android:layout_centerInParent="true" style="@style/title_action_icon" />
+        <ImageView android:id="@id/title_divider_podcast" android:layout_toLeftOf="@id/title_button_podcast" style="@style/title_button_divider" />
+        <ImageButton android:id="@id/title_button_article" android:src="@drawable/ic_bar_feed" android:layout_toLeftOf="@id/title_divider_podcast" android:layout_centerInParent="true" style="@style/title_action_icon" />
+        <ImageView android:id="@id/title_divider_article" android:layout_toLeftOf="@id/title_button_article" style="@style/title_button_divider" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/title_progress" android:visibility="gone" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/title_divider_article" android:layout_centerInParent="true" style="@style/progress_bar_small" />
+        <TextView android:textStyle="bold" android:ellipsize="marquee" android:id="@id/title_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_toLeftOf="@id/title_progress" android:layout_toRightOf="@id/title_icon" android:layout_centerVertical="true" style="@style/title_text" />
+    </RelativeLayout>
+</merge>

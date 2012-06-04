@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/opml_bar" android:background="@color/dialog_background" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <AutoCompleteTextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/opml_file_or_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/manage_source_opml_title" android:singleLine="true" android:layout_weight="1.0" android:inputType="textUri" android:imeOptions="actionSearch" />
+        <Button android:id="@id/open_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/list_divider" android:dividerHeight="1.0px" android:layout_weight="1.0" android:layout_below="@id/opml_bar" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:id="@id/empty" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_items" android:layout_below="@id/opml_bar" />
+</RelativeLayout>

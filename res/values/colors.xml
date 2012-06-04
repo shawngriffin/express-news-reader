@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="cyan">#ff14b3db</color>
+    <color name="aboutactivity_background">#ffffffff</color>
+    <color name="aboutactivity_text">#ff000000</color>
+    <color name="group_background">#55787878</color>
+    <color name="dialog_background">#ff888888</color>
+    <color name="theme_dark_title">#ffffffff</color>
+    <color name="theme_dark_footer">#ffaaaaaa</color>
+    <color name="theme_light_title">#ff444444</color>
+    <color name="theme_light_footer">#ff888888</color>
+    <color name="header_background">#99000000</color>
+    <color name="feeditemactivity_footer_textcolor">#ffaaaaaa</color>
+    <color name="link">#ff4272db</color>
+    <color name="dark_gray">#ff333333</color>
+    <color name="darker_gray">#ff101010</color>
+    <color name="feed_title_unread_textcolor">#ffffffff</color>
+    <color name="feed_title_read_textcolor">#ffaaaaaa</color>
+    <color name="feed_footer_textcolor">#ffaaaaaa</color>
+    <color name="screen_background">#ffc0f0c0</color>
+    <color name="error_message">#ffc00000</color>
+    <color name="divider_bg">#ff626262</color>
+    <color name="title_bg">#ffdee2ee</color>
+    <color name="menu_selected_bg">#ff5a5a5a</color>
+    <color name="gallery_bg">#ff333333</color>
+    <color name="time_indicator_text">#99ffffff</color>
+    <color name="audio_player_bg">#ff0e0e0e</color>
+    <color name="item_title_text">#ffd1d1d1</color>
+    <color name="item_descript_text">#ff868686</color>
+    <color name="dragndrop_background">#e0103010</color>
+    <color name="playlist_overlay">#dd000000</color>
+</resources>

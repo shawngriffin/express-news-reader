@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="56.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0">
+            <TextView android:textColor="@color/aboutactivity_text" android:id="@id/help_us_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/help_us_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="@color/dialog_background" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-56.0dip">
+        <Button android:id="@id/helpus_rateus" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/rate_us" android:layout_weight="50.0" />
+        <Button android:id="@id/helpus_getpro" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/get_pro" android:layout_weight="50.0" />
+    </LinearLayout>
+</LinearLayout>

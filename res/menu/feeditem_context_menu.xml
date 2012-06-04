@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/feeditem_context_menu_toggle_star" android:title="@string/toggle_star" />
+    <item android:id="@id/feeditem_context_menu_toggle_read" android:title="@string/toggle_read" />
+    <item android:id="@id/feeditem_context_menu_mark_readuntilhere" android:title="@string/mark_read_until_here" />
+    <item android:id="@id/feeditem_context_menu_mark_readtobottom" android:title="@string/mark_read_to_bottom" />
+    <item android:id="@id/feeditem_context_menu_download_article" android:title="@string/download_article" />
+    <item android:id="@id/feeditem_context_menu_undownload_article" android:title="@string/undownload_article" />
+    <item android:id="@id/feeditem_context_menu_download_podcast" android:title="@string/download_podcast" />
+    <item android:id="@id/feeditem_context_menu_undownload_podcast" android:title="@string/undownload_podcast" />
+    <item android:id="@id/feeditem_context_menu_redownload_podcast" android:title="@string/redownload_podcast" />
+    <item android:id="@id/feeditem_context_menu_delete" android:title="@string/delete" />
+</menu>

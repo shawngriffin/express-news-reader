@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/row" android:layout_width="200.0dip" android:layout_height="200.0dip" style="@style/gridRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/feeditem_item_thumb" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerCrop" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/feeditem_item_title" android:background="@color/header_background" android:maxLines="3" android:layout_alignParentBottom="true" style="@style/tile_text" />
+</RelativeLayout>

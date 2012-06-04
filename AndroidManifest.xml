@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="3" android:versionName="1.0" android:installLocation="auto" package="com.maiome.expressnews"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="13" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true" />
+    <application android:label="@string/app_name" android:icon="@drawable/app_icon" android:name="com.appyet.mobile.context.ApplicationContext" android:hardwareAccelerated="true">
+        <service android:name="com.appyet.mobile.service.SyncService" />
+        <service android:name="com.appyet.mobile.service.MediaService" />
+        <receiver android:name="com.appyet.mobile.receiver.CommonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.HEADSET_PLUG" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.net.ConnectivityManager.CONNECTIVITY_ACTION" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.appyet.mobile.receiver.AlarmReceiver" />
+        <receiver android:name="com.appyet.mobile.provider.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget" />
+        </receiver>
+        <receiver android:name="com.appyet.mobile.receiver.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name="com.appyet.mobile.activity.MainActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.appyet.mobile.activity.SearchActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <meta-data android:name="android.app.default_searchable" android:value="com.appyet.mobile.activity.SearchActivity" />
+        <provider android:name="com.appyet.mobile.provider.SuggestionProvider" android:authorities="com.maiome.expressnews.suggestion.provider" />
+        <activity android:name="com.appyet.mobile.activity.CommentsActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.CleanUpActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageCategoryPickerActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageCategoryActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.ManageCategoryAddActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.ManageCategoryPropertyActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageSourceActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.ManageSourceChoiceActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.ManageSourceUrlActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageSourceOpmlActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageSourceGoogleReaderActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageSourceSearchActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.ManageSourceOrganizeActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.WidgetConfigureActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.ManageSourcePropertyActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.PlayListActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.AllActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.LatestActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.LatestExActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.GalleryActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.PodcastActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.PodcastExActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.SourceActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.WebActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.SourceItemActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.StarActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.StarExActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.UnreadActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.UnreadExActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/about" android:name="com.appyet.mobile.activity.AboutActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/license" android:name="com.appyet.mobile.activity.LicenseActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:label="@string/settings" android:name="com.appyet.mobile.activity.SettingsActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:label="@string/backuprestoreactivity_title" android:name="com.appyet.mobile.activity.BackupRestoreActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/help_us" android:name="com.appyet.mobile.activity.HelpUsActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.FeedItemDetailActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.appyet.mobile.activity.BillingActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:name="com.appyet.mobile.activity.GoogleAccountActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.SleepTimerActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.TranslateActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.appyet.mobile.activity.ImageViewerActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="IMG__N6hzbJd20CBAsr-2bGIrw" />
+                <data android:host="*" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.appyet.mobile.activity.ManageSourceIntentActivity" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:host="*feedburner.com" />
+                <data android:host="feedproxy.google.com" />
+                <data android:host="feedsproxy.google.com" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.xml" />
+                <data android:pathPattern=".*\\.rss" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:mimeType="text/xml" />
+                <data android:mimeType="application/rss+xml" />
+                <data android:mimeType="application/atom+xml" />
+                <data android:mimeType="application/xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*xml" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*rss" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*feed.*" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*podcast.*" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*Podcast.*" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*rss.*" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*RSS.*" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.android.vending.billing.BillingService" />
+        <receiver android:name="com.android.vending.billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+                <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.apps.analytics.AnalyticsReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name="com.millennialmedia.android.VideoPlayer" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name="com.inmobi.androidsdk.IMBrowserActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+</manifest>

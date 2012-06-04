@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_add" android:id="@id/comment_option_menu_addasfeed" android:title="@string/add_as_feed" />
+</menu>

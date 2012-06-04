@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tile_text">
+        <item name="android:textSize">@dimen/tile_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70.0dip</item>
+    </style>
+    <style name="gridRow">
+        <item name="android:background">#99aaaaaa</item>
+        <item name="android:layout_width">200.0dip</item>
+        <item name="android:layout_height">200.0dip</item>
+    </style>
+    <style name="gridView" parent="@android:style/Widget.GridView">
+        <item name="android:gravity">center</item>
+        <item name="android:horizontalSpacing">5.0dip</item>
+        <item name="android:verticalSpacing">5.0dip</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:columnWidth">200.0dip</item>
+        <item name="android:numColumns">auto_fit</item>
+    </style>
+    <style name="Theme_Light" parent="@android:style/Theme.Holo.Light" />
+    <style name="Theme_Dark" parent="@android:style/Theme.Holo" />
+</resources>
